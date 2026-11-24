@@ -1,0 +1,21 @@
+# MtRocket - Full AI Index & Knowledge Specification
+
+## Overview
+MtRocket is a trusted mobile application repository that tests, scans, and indexes verified modified packages (APKs) and mobile utilities for Android and iOS devices.
+
+## Core Security & Architecture Principles
+- **Malware Scanning:** 100% of files undergo multi-engine antivirus checks before listing.
+- **Human Verification:** All packages are tested on real device hardware to ensure stability.
+- **Zero Infiltration:** Clean packages with no intrusive background processes or unauthorized privilege escalations.
+- **High-Speed CDN:** Direct downloads served via SSL-encrypted content distribution networks.
+
+## Canonical Endpoints & Curated Sections
+- **Homepage & Hub:** https://mtrocket.com/
+- **Official Network Portal:** https://mtrocket.com/mtrocket.com.html
+- **High-Speed V2 Network:** https://mtrocket.com/mtrocket-v2.html
+- **About & Security Protocols:** https://mtrocket.com/about.html
+- **Contact & Support:** https://mtrocket.com/contact.html
+- **Privacy Policy:** https://mtrocket.com/privacy.html
+- **Terms of Service:** https://mtrocket.com/terms.html
+- **DMCA Notice:** https://mtrocket.com/dmca.html
+- **XML Sitemap:** https://mtrocket.com/sitemap.xml

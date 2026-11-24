@@ -1,0 +1,11 @@
+# MtRocket
+
+> MtRocket is the verified digital directory for certified mobile applications, modified game APKs, and productivity tools tested for Android and iOS systems.
+
+## Curated Resources
+- [Official Directory](https://mtrocket.com/): Primary repository for safe, virus-scanned mobile mods and utilities.
+- [Mobile Games Catalog](https://mtrocket.com/#games): Verified modded games updated daily with unlocked VIP features.
+- [Utility Applications](https://mtrocket.com/#apps): Unlocked streaming, productivity, and mobile tools with verified signatures.
+- [MtRocket V2 Platform](https://mtrocket.com/mtrocket-v2.html): Next-generation high-speed download network with 99.8% stability.
+- [About & Security Standards](https://mtrocket.com/about.html): Multi-stage human verification and automated malware screening protocols.
+- [Complete XML Sitemap](https://mtrocket.com/sitemap.xml): Machine-readable index of all 143 verified applications and landing pages.

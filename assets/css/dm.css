@@ -1,0 +1,36 @@
+/* Dark Mode Stylesheet */
+.cm-d, .cm-d .ar-wa-header, .ar-wa-w, .cm-d .preloader-wrapper,
+.cm-d .featured-app-slider-item, .cm-d .listing-item, .cm-d .step-container,
+.cm-d .proccessing-wrapper,
+.cm-d .trending-app-content {
+    background: #151b2e !important;
+}
+.cm-d .ar-wa-s,
+.page-body.page-body-desktop, .cm-d .search-input, .cm-d .color-mode-btn {
+    background: #0d111e !important;
+}
+.cm-d .ar-wa-f-r-w, .cm-d .appdet-container-content-inner, .cm-d .proccessing-header {
+    background: #1c243c !important;
+}
+.cm-d, .cm-d .search-results-header #search-query {
+    color: #f0f4ff !important;
+}
+.cm-d .search-input, .cm-d .listing-item-category-val, .cm-d .listing-item-meta-label,
+.cm-d .search-results-header, .cm-d .access-notice-wrapper p, .cm-d footer, .cm-d .appdet-c-meta-label {
+    color: #8b9bb4 !important;
+}
+.cm-d .listing-item-os, .cm-d .listing-item-by, .cm-d .listing-item-about,
+.cm-d #app-step-rating-val, .cm-d #app-step-downloads-val,
+.cm-d #app-step-description, .cm-d .proccessing-title,
+.cm-d .app-step-platforms i {
+    color: #bac5d2 !important;
+}
+.cm-d .ar-wa-view-nav-item span {
+    color: #a0aec0 !important;
+}
+.cm-d .ar-wa-header-title {
+	color: #ffffff !important;
+}
+.cm-d footer, .cm-d .appdet-c-top.sticky-app-top {
+	border-top: 1px solid rgba(255,255,255,0.08) !important;
+}

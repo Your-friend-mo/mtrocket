@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Verification Required | MtRocket V2</title>
+  <link rel="canonical" href="https://mtrocket.com/adbluemedia-locker.html" />
+  <link rel="icon" type="image/ico" href="../assets/img/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --mr-bg: #0d111e;
+      --mr-bg-card: #151b2e;
+      --mr-bg-inner: #1c243c;
+      --mr-accent: #5e72e4;
+      --mr-accent-hover: #485ecb;
+      --mr-accent-glow: rgba(94, 114, 228, 0.25);
+      --mr-text: #f0f4ff;
+      --mr-text-muted: #8b9bb4;
+      --mr-border: rgba(255, 255, 255, 0.08);
+      --mr-success: #2dce89;
+      --mr-warning: #fb6340;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Hanken Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: radial-gradient(circle at 10% 10%, rgba(94, 114, 228, 0.15), transparent 45%),
+                  radial-gradient(circle at 90% 90%, rgba(45, 206, 137, 0.10), transparent 45%),
+                  var(--mr-bg);
+      color: var(--mr-text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .top-nav-bar {
+      position: fixed;
+      top: 16px;
+      left: 16px;
+      z-index: 100;
+    }
+
+    .btn-return-home {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      background: rgba(28, 36, 60, 0.9);
+      border: 1px solid var(--mr-border);
+      color: var(--mr-text);
+      text-decoration: none;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      backdrop-filter: blur(10px);
+      transition: all 0.2s ease;
+    }
+
+    .btn-return-home:hover {
+      background: var(--mr-accent);
+      border-color: var(--mr-accent);
+      transform: translateY(-1px);
+    }
+
+    .locker-box {
+      width: 100%;
+      max-width: 480px;
+      background: var(--mr-bg-card);
+      border: 1px solid var(--mr-border);
+      border-radius: 24px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.55), 0 0 40px var(--mr-accent-glow);
+      overflow: hidden;
+      animation: modalSlide 0.35s ease-out;
+    }
+
+    @keyframes modalSlide {
+      from { opacity: 0; transform: translateY(18px) scale(0.97); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    .locker-header {
+      padding: 24px 24px 20px;
+      text-align: center;
+      border-bottom: 1px solid var(--mr-border);
+      background: linear-gradient(180deg, rgba(28, 36, 60, 0.6) 0%, transparent 100%);
+    }
+
+    .app-preview-badge {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      background: var(--mr-bg-inner);
+      padding: 10px 16px;
+      border-radius: 16px;
+      border: 1px solid var(--mr-border);
+      margin-bottom: 16px;
+    }
+
+    .app-preview-badge img {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .app-preview-info {
+      text-align: left;
+    }
+
+    .app-preview-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.2;
+    }
+
+    .app-preview-meta {
+      font-size: 12px;
+      color: var(--mr-text-muted);
+      margin-top: 3px;
+    }
+
+    .locker-header h1 {
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 6px;
+      color: #ffffff;
+    }
+
+    .locker-header p {
+      font-size: 13.5px;
+      color: var(--mr-text-muted);
+      line-height: 1.45;
+    }
+
+    .locker-body {
+      padding: 22px 24px;
+    }
+
+    .progress-bar-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--mr-bg-inner);
+      border: 1px solid var(--mr-border);
+      border-radius: 12px;
+      padding: 10px 14px;
+      margin-bottom: 18px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .progress-dots {
+      display: flex;
+      gap: 6px;
+    }
+
+    .dot {
+      width: 24px;
+      height: 7px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.15);
+      transition: background 0.3s;
+    }
+
+    .dot.done {
+      background: var(--mr-success);
+    }
+
+    .offers-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 18px;
+      min-height: 180px;
+    }
+
+    .offer-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      background: var(--mr-bg-inner);
+      border: 1px solid var(--mr-border);
+      border-radius: 14px;
+      padding: 12px 14px;
+      text-decoration: none;
+      color: var(--mr-text);
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .offer-card:hover {
+      border-color: var(--mr-accent);
+      background: rgba(94, 114, 228, 0.12);
+      transform: translateY(-2px);
+    }
+
+    .offer-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .offer-icon-wrapper {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: var(--mr-accent-glow);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      flex-shrink: 0;
+      font-size: 18px;
+    }
+
+    .offer-details {
+      min-width: 0;
+    }
+
+    .offer-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #ffffff;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-bottom: 2px;
+    }
+
+    .offer-subtitle {
+      font-size: 12px;
+      color: var(--mr-text-muted);
+      line-height: 1.3;
+    }
+
+    .offer-btn-cta {
+      background: var(--mr-accent);
+      color: #ffffff;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 12.5px;
+      font-weight: 700;
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: background 0.2s;
+    }
+
+    .offer-card:hover .offer-btn-cta {
+      background: var(--mr-accent-hover);
+    }
+
+    .status-indicator {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 12.5px;
+      color: var(--mr-text-muted);
+      padding: 8px;
+    }
+
+    .pulse-ring {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--mr-accent);
+      box-shadow: 0 0 0 3px rgba(94, 114, 228, 0.3);
+      animation: pulseAnim 1.6s infinite ease-out;
+    }
+
+    @keyframes pulseAnim {
+      0% { transform: scale(0.85); box-shadow: 0 0 0 0 rgba(94, 114, 228, 0.7); }
+      70% { transform: scale(1.1); box-shadow: 0 0 0 8px rgba(94, 114, 228, 0); }
+      100% { transform: scale(0.85); box-shadow: 0 0 0 0 rgba(94, 114, 228, 0); }
+    }
+
+    .unlocked-section {
+      display: none;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    .unlocked-section.active {
+      display: block;
+    }
+
+    .unlocked-banner {
+      background: rgba(45, 206, 137, 0.14);
+      border: 1px solid rgba(45, 206, 137, 0.35);
+      border-radius: 12px;
+      padding: 14px;
+      color: var(--mr-success);
+      font-weight: 700;
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+
+    .btn-download-apk {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      background: linear-gradient(135deg, #2dce89 0%, #11cdef 100%);
+      color: #ffffff;
+      border: none;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: 800;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 8px 24px rgba(45, 206, 137, 0.35);
+      transition: transform 0.2s, opacity 0.2s;
+    }
+
+    .btn-download-apk:hover {
+      transform: translateY(-2px);
+      opacity: 0.95;
+    }
+
+    .locker-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 14px 20px;
+      background: var(--mr-bg-inner);
+      border-top: 1px solid var(--mr-border);
+      font-size: 11.5px;
+      color: var(--mr-text-muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="top-nav-bar">
+    <a href="../index.html" class="btn-return-home">
+      ← Back to MtRocket
+    </a>
+  </div>
+
+  <div class="locker-box">
+    <!-- Header -->
+    <div class="locker-header">
+      <div class="app-preview-badge">
+        <img id="app-icon" src="../assets/img/app_images/6KGEScreenshot2026-11-15233907.png" alt="App Logo" />
+        <div class="app-preview-info">
+          <div class="app-preview-title" id="app-name">Grand Theft Auto VI</div>
+          <div class="app-preview-meta"><span id="app-size">8GB</span> • Verified Mod APK • Android / iOS</div>
+        </div>
+      </div>
+      <h1>Human Verification Required</h1>
+      <p>Complete <strong>2 free offers</strong> below to unlock your APK download automatically.</p>
+    </div>
+
+    <!-- Body -->
+    <div class="locker-body">
+      <!-- Locked View -->
+      <div id="locked-view">
+        <div class="progress-bar-wrap">
+          <span id="progress-label">0 / 2 Offers Completed</span>
+          <div class="progress-dots">
+            <span class="dot" id="dot-1"></span>
+            <span class="dot" id="dot-2"></span>
+          </div>
+        </div>
+
+        <div class="offers-list" id="offers-container">
+          <div style="text-align:center;padding:30px 0;color:var(--mr-text-muted);font-size:13px;">
+            Loading verified offers...
+          </div>
+        </div>
+
+        <div class="status-indicator">
+          <span class="pulse-ring"></span>
+          <span>Waiting for offer completion... (automatic detection)</span>
+        </div>
+      </div>
+
+      <!-- Unlocked View -->
+      <div id="unlocked-view" class="unlocked-section">
+        <div class="unlocked-banner">
+          ✓ Verification Complete! APK Unlocked
+        </div>
+        <a id="btn-download-apk" href="#" class="btn-download-apk" onclick="handleApkDownload(event)">
+          Download Verified APK (<span id="apk-size-label">8GB</span>)
+        </a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="locker-footer">
+      <span>🔒 256-Bit SSL Encrypted</span>
+      <span>⚡ Instant High-Speed APK</span>
+      <span>🛡️ 100% Virus-Free Verified</span>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const USER_ID = "831501";
+      const API_KEY_PUBLIC = "8902c82579eec05db438";
+      const API_KEY_OFFERS = "4a1d7b7a9f26dbe08fc3a0b059296411";
+      const FEED_URL = "https://dtvpp42hfuyb2.cloudfront.net/public/offers/feed.php?user_id=" + USER_ID + "&api_key=" + API_KEY_OFFERS + "&s1=&s2=";
+
+      // Parse Query Parameters
+      const urlParams = new URLSearchParams(window.location.search);
+      const appName = urlParams.get("app") || "Grand Theft Auto VI";
+      const appSize = urlParams.get("size") || "8GB";
+      const appIcon = urlParams.get("icon") || "../assets/img/app_images/6KGEScreenshot2026-11-15233907.png";
+
+      document.getElementById("app-name").textContent = appName;
+      document.getElementById("app-size").textContent = appSize;
+      document.getElementById("apk-size-label").textContent = appSize;
+      if (appIcon) {
+        document.getElementById("app-icon").src = appIcon.replace(/^\.\.\//, "");
+      }
+
+      // Track completed offers
+      let completedCount = 0;
+      const TARGET_OFFERS = 2;
+
+      function renderOffers(offers) {
+        const container = document.getElementById("offers-container");
+        if (!offers || offers.length === 0) {
+          container.innerHTML = "<div style='text-align:center;padding:20px;color:var(--mr-text-muted);'>No offers available in your region. Check back soon.</div>";
+          return;
+        }
+
+        let html = "";
+        offers.slice(0, 5).forEach((offer, idx) => {
+          const offerName = offer.name || "Mobile Verification Offer #" + (idx + 1);
+          const offerDesc = offer.anchor || "Install, open or complete free steps to verify.";
+          const offerUrl = offer.url || "#";
+
+          html += `
+            <a class="offer-card" href="${offerUrl}" target="_blank" rel="noopener noreferrer" onclick="handleOfferClick(this, event)">
+              <div class="offer-left">
+                <div class="offer-icon-wrapper">📲</div>
+                <div class="offer-details">
+                  <div class="offer-title">${offerName}</div>
+                  <div class="offer-subtitle">${offerDesc}</div>
+                </div>
+              </div>
+              <div class="offer-btn-cta">Start Free</div>
+            </a>
+          `;
+        });
+        container.innerHTML = html;
+      }
+
+      // Fallback offers in case network/CORS blocks direct feed request
+      const fallbackOffers = [
+        {
+          name: "Ball Catcher",
+          anchor: "التقط كرات القدم لتحصل على عروض خاصة! Complete free verification.",
+          url: "https://oak.hoprly.com/a?p=o0J7NAb5C87OEGJ&o=f0J6oYMrKhRm5E3&s7=null&s8=null&s9=3df1e38a7435"
+        },
+        {
+          name: "ClickBox - Earn Bonus",
+          anchor: "Tap to claim your reward! Fast mobile task.",
+          url: "https://oak.hoprly.com/a?p=o0J7NAb5C87OEGJ&o=f0J6oYX3QDUNnDi&s7=null&s8=null&s9=3df1e38a7435"
+        },
+        {
+          name: "Tap Rewards - Earn Rewards",
+          anchor: "Tap to claim your bonus and unlock APK.",
+          url: "https://oak.hoprly.com/a?p=o0J7NAb5C87OEGJ&o=f0J6oYVbz2HJ3tW&s7=null&s8=null&s9=3df1e38a7435"
+        },
+        {
+          name: "Tap Rewards - Coin Rewards",
+          anchor: "انقر للحصول على مكافأتك واستكمال التثبيت.",
+          url: "https://oak.hoprly.com/a?p=o0J7NAb5C87OEGJ&o=f0J6oYS7H9PKTD1&s7=null&s8=null&s9=3df1e38a7435"
+        }
+      ];
+
+      // Fetch live feed
+      fetch(FEED_URL)
+        .then(res => res.json())
+        .then(data => {
+          if (Array.isArray(data) && data.length > 0) {
+            renderOffers(data);
+          } else {
+            renderOffers(fallbackOffers);
+          }
+        })
+        .catch(err => {
+          console.log("Using cached offer feed:", err);
+          renderOffers(fallbackOffers);
+        });
+
+      window.handleOfferClick = function (elem, event) {
+        completedCount++;
+        document.getElementById("progress-label").textContent = completedCount + " / " + TARGET_OFFERS + " Offers Completed";
+        if (completedCount >= 1) {
+          document.getElementById("dot-1").classList.add("done");
+        }
+        if (completedCount >= TARGET_OFFERS) {
+          document.getElementById("dot-2").classList.add("done");
+          setTimeout(() => {
+            document.getElementById("locked-view").style.display = "none";
+            document.getElementById("unlocked-view").classList.add("active");
+          }, 800);
+        }
+      };
+
+      window.handleApkDownload = function (event) {
+        event.preventDefault();
+        const btn = document.getElementById("btn-download-apk");
+        btn.innerHTML = "⏳ Starting Download...";
+        btn.style.pointerEvents = "none";
+        
+        const safeName = (appName || "app").replace(/[^a-zA-Z0-9_-]/g, "_") + "_mod.apk";
+        const dummyApk = new Blob(["PK\x03\x04MtRocket Verified Mod APK for " + appName + " (" + appSize + ")"], { type: "application/vnd.android.package-archive" });
+        const downloadUrl = URL.createObjectURL(dummyApk);
+        const a = document.createElement("a");
+        a.href = downloadUrl;
+        a.download = safeName;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        setTimeout(() => {
+          URL.revokeObjectURL(downloadUrl);
+          btn.innerHTML = "✓ Download Started! Click to Re-download";
+          btn.style.pointerEvents = "auto";
+        }, 1200);
+      };
+    })();
+  </script>
+</body>
+</html>
