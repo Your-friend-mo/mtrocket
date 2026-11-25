@@ -11,11 +11,11 @@ MtRocket is a trusted mobile application repository that tests, scans, and index
 
 ## Canonical Endpoints & Curated Sections
 - **Homepage & Hub:** https://mtrocket.comee.online/
-- **Official Network Portal:** https://mtrocket.comee.online/mtrocket.com.html
-- **High-Speed V2 Network:** https://mtrocket.comee.online/mtrocket-v2.html
-- **About & Security Protocols:** https://mtrocket.comee.online/about.html
-- **Contact & Support:** https://mtrocket.comee.online/contact.html
-- **Privacy Policy:** https://mtrocket.comee.online/privacy.html
-- **Terms of Service:** https://mtrocket.comee.online/terms.html
-- **DMCA Notice:** https://mtrocket.comee.online/dmca.html
+- **Official Network Portal:** https://mtrocket.comee.online/mtrocket.com
+- **High-Speed V2 Network:** https://mtrocket.comee.online/mtrocket-v2
+- **About & Security Protocols:** https://mtrocket.comee.online/about
+- **Contact & Support:** https://mtrocket.comee.online/contact
+- **Privacy Policy:** https://mtrocket.comee.online/privacy
+- **Terms of Service:** https://mtrocket.comee.online/terms
+- **DMCA Notice:** https://mtrocket.comee.online/dmca
 - **XML Sitemap:** https://mtrocket.comee.online/sitemap.xml
