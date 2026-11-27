@@ -1,21 +1,37 @@
-# MtRocket - Full AI Index & Knowledge Specification
+# MtRocket Full Architecture & Machine Context
 
-## Overview
-MtRocket is a trusted mobile application repository that tests, scans, and indexes verified modified packages (APKs) and mobile utilities for Android and iOS devices.
+MtRocket is a trusted mobile directory offering verified modded APKs and gaming enhancements.
+Domain: https://mtrocket.comee.online
+Sitemap: https://mtrocket.comee.online/sitemap.xml
+Total Cataloged Applications: 147
 
-## Core Security & Architecture Principles
-- **Malware Scanning:** 100% of files undergo multi-engine antivirus checks before listing.
-- **Human Verification:** All packages are tested on real device hardware to ensure stability.
-- **Zero Infiltration:** Clean packages with no intrusive background processes or unauthorized privilege escalations.
-- **High-Speed CDN:** Direct downloads served via SSL-encrypted content distribution networks.
+## Major Categories
+- Mobile Games (Action, RPG, Simulation, Sports, Racing, Strategy, Battle Royale)
+- Mobile Utilities (Streaming, Video Editing, Social Utilities, Tweaks)
 
-## Canonical Endpoints & Curated Sections
-- **Homepage & Hub:** https://mtrocket.comee.online/
-- **Official Network Portal:** https://mtrocket.comee.online/mtrocket.com
-- **High-Speed V2 Network:** https://mtrocket.comee.online/mtrocket-v2
-- **About & Security Protocols:** https://mtrocket.comee.online/about
-- **Contact & Support:** https://mtrocket.comee.online/contact
-- **Privacy Policy:** https://mtrocket.comee.online/privacy
-- **Terms of Service:** https://mtrocket.comee.online/terms
-- **DMCA Notice:** https://mtrocket.comee.online/dmca
-- **XML Sitemap:** https://mtrocket.comee.online/sitemap.xml
+## Popular Verified Games Included
+- [eFootball 2027](https://mtrocket.comee.online/products/efootball-2027.html)
+- [Fc Mobile 2026](https://mtrocket.comee.online/products/fc-mobile-2026.html)
+- [Pubg Mobile](https://mtrocket.comee.online/products/pubg-mobile.html)
+- [Free Fire](https://mtrocket.comee.online/products/free-fire.html)
+- [Roblox](https://mtrocket.comee.online/products/roblox.html)
+- [BitLife - Life Simulator](https://mtrocket.comee.online/products/bitlife-life-simulator.html)
+- [ShortMax](https://mtrocket.comee.online/products/shortmax.html)
+- [Seaside Escape](https://mtrocket.comee.online/products/seaside-escape.html)
+- [Tiktok Coins](https://mtrocket.comee.online/products/tiktok-coins.html)
+- [Capcut Pro](https://mtrocket.comee.online/products/capcut-pro.html)
+- [Mobile Legends: Bang Bang](https://mtrocket.comee.online/products/mobile-legends-bang-bang.html)
+- [Blood Strike - FPS for all](https://mtrocket.comee.online/products/blood-strike-fps-for-all.html)
+- [8 Ball Pool](https://mtrocket.comee.online/products/8-ball-pool.html)
+- [Yalla Ludo](https://mtrocket.comee.online/products/yalla-ludo.html)
+- [Brawl Stars](https://mtrocket.comee.online/products/brawl-stars.html)
+- [Jawaker](https://mtrocket.comee.online/products/jawaker.html)
+- [Dream League Soccer 2026](https://mtrocket.comee.online/products/dream-league-soccer-2026.html)
+- [Hay Day](https://mtrocket.comee.online/products/hay-day.html)
+- [Delta Executor](https://mtrocket.comee.online/products/delta-executor.html)
+- [NBA 2K Mobile](https://mtrocket.comee.online/products/nba-2k-mobile.html)
+- [Township](https://mtrocket.comee.online/products/township.html)
+- [Car Parking Multiplayer 2](https://mtrocket.comee.online/products/car-parking-multiplayer-2.html)
+- [The Spike - Volleyball Story](https://mtrocket.comee.online/products/the-spike-volleyball-story.html)
+- [Dragon City Mobile](https://mtrocket.comee.online/products/dragon-city-mobile.html)
+- [Lords Mobile](https://mtrocket.comee.online/products/lords-mobile.html)

@@ -649,7 +649,32 @@ var SEARCH_ALIASES_RAW = {
     'beamng': 'beamng drive mobile',
     'valorant': 'valorant mobile',
     'valo': 'valorant mobile',
-    'monopoly': 'monopoly go'
+    'monopoly': 'monopoly go',
+    'mc': 'minecraft',
+    'mine craft': 'minecraft',
+    'minecraft pe': 'minecraft',
+    'fort': 'fortnite',
+    'fn': 'fortnite',
+    'fortnite mobile': 'fortnite',
+    'genshin': 'genshin impact',
+    'gi': 'genshin impact',
+    'coc': 'clash of clans',
+    'clash': 'clash of clans',
+    'hsr': 'honkai star rail',
+    'star rail': 'honkai star rail',
+    'stumble': 'stumble guys',
+    'sg': 'stumble guys',
+    'among': 'among us',
+    'amoung us': 'among us',
+    'geometry': 'geometry dash',
+    'gd': 'geometry dash',
+    'san andreas': 'grand theft auto san andreas',
+    'gta sa': 'grand theft auto san andreas',
+    'gtasa': 'grand theft auto san andreas',
+    'solo leveling': 'solo leveling arise',
+    'arise': 'solo leveling arise',
+    'wuwa': 'wuthering waves',
+    'zzz': 'zenless zone zero'
 };
 
 var SEARCH_ALIASES = {};
